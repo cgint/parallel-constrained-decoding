@@ -1,0 +1,3 @@
+# Optional DSPy baseline only; provider SDKs remain caller-selected.
+# Verified against the educational repository's installed DSPy 3.2.1.
+dspy>=3.2.1,<3.3

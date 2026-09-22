@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# System and IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Local model caches if stored in-tree
+checkpoints/
+
+# Secrets & credentials
+.env
+.env.*
+
+# Private agent workspace (boundary per AGENTS.md §3): raw captures,
+# sub-agent handoff briefs, WORK REPORTs — not a repository artifact.
+agent/
+
+# Local comparison-run artifacts; keep harness code, tests, and datasets tracked.
+comparison/
+
+# Pi session state & operational data
+.pi/
+.sub_agent_conf
+AGENTS.md
+PROJECT_OVERVIEW.md
+started.md
+SECURITY_SCAN-*.md
+
+# Scan results
+.scan-results/
+
+# Research docs (agent-session workstream; public results live in benchmarks/)
+docs/
