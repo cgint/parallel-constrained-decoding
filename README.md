@@ -1,22 +1,3 @@
----
-language:
-- en
-license: apache-2.0
-library_name: mlx
-tags:
-- structured-generation
-- parallel-decoding
-- constrained-decoding
-- apple-silicon
-- mlx
-- classification
-- json
-pipeline_tag: text-generation
-base_model: Qwen/Qwen2.5-1.5B-Instruct
-spaces:
-- drinkmoonshine/parallel-constrained-decoding
----
-
 # Parallel Constrained Decoding for Apple Silicon
 
 **What is this?** A local inference engine for *structured decisions* on your Mac — no API keys, no cloud, no data leaves your machine. Give it a document and a JSON schema (e.g. "route this ticket: `support` / `billing` / `engineering`"), and it returns a valid JSON answer with a confidence score in ~75 ms.
