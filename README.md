@@ -19,6 +19,34 @@ spaces:
 
 # Parallel Constrained Decoding for Apple Silicon
 
+**What is this?** A local inference engine for *structured decisions* on your Mac — no API keys, no cloud, no data leaves your machine. Give it a document and a JSON schema (e.g. "route this ticket: `support` / `billing` / `engineering`"), and it returns a valid JSON answer with a confidence score in ~75 ms.
+
+**Who is it for?** People who need fast, private, structured LLM output on Apple Silicon: decision routing, categorical classification, form-filling, or any task where the answer is a *choice from a known set*.
+
+**How is it different?** Instead of generating tokens one-by-one (autoregressive), it evaluates all schema fields *in parallel* in a single forward pass. That's the speedup. The trade-off: quality on open-ended classification (many choices) is lower than a full LLM — see the comparison below.
+
+### How it compares
+
+| | **This engine (RLCD)** | **DSPy** (programmatic LLM) | **Jev / TypeSafe** (API) |
+|---|---|---|---|
+| **Where it runs** | Your Mac (MLX, Apple Silicon) | Your Mac or server (any LLM) | Their cloud (API) |
+| **Latency** | **~75 ms** (local, 1.5B model) | 170–8,000 ms (depends on model) | ~700 ms (network hop) |
+| **Quality (77-way classification)** | 0.290 (weakest) | 0.842 (qwen 27B local) | n/a (vendor claims) |
+| **Cost** | Free (electricity) | Free (local) or API cost | ~$0.042/M input tokens |
+| **Data privacy** | **100% local** | Local if you use a local model | Sent to their API |
+| **Schema validity** | 100% guaranteed (constrained decode) | Depends on model + prompt | 100% (vendor claim) |
+| **Best at** | Bounded choices (≤4 options), Boolean fields, low-latency routing | Open classification, complex prompts, iteration | Drop-in structured API |
+
+> **Bottom line:** Use this engine when you need *fast, private, bounded-choice* decisions on a Mac. Use DSPy when you need *quality* on open classification and can tolerate higher latency. Use Jev when you want a *managed API* and don't mind sending data to the cloud. Full numbers: [`benchmarks/`](benchmarks/).
+
+### Credits
+
+- **Original engine:** [Harsha Gundala](https://huggingface.co/harshatheg) — [`harshatheg/Qwen-2.5-1B-RLCD`](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) on Hugging Face (Apache-2.0). This fork adds full-token enum scoring, local benchmarks, and the comparison grid.
+- **DSPy** — [Stanford NLP](https://dspy.ai/)'s programming framework for LLM applications. The comparison harness in `benchmarks/` uses DSPy as the quality reference. [DSPy GitHub](https://github.com/stanfordnlp/dspy).
+- **Jev / TypeSafe** — [TypeSafe AI](https://typesafe.ai/)'s structured-decision API. Referenced in the comparison as the closed-API benchmark. [Jev docs](https://docs.typesafe.ai/).
+
+---
+
 > **Forked from** [harshatheg/Qwen-2.5-1B-RLCD](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) (Apache-2.0).
 > This fork adds full-token enum scoring (replacing the first-token collision fallback),
 > local benchmark experiments, and a comparison grid against DSPy, Laya, and Gemini.
