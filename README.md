@@ -30,8 +30,8 @@
 
 > **Forked from** [harshatheg/Qwen-2.5-1B-RLCD](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) (Apache-2.0).
 > This fork adds full-token enum scoring (replacing the first-token collision fallback),
-> local benchmark experiments, and a comparison grid against DSPy, Laya, Gemini, and
-> TypeSafe Jev.
+> local benchmark experiments, and a comparison grid against DSPy (local qwen 27B and hosted
+> Gemini 3.5 Flash-Lite), Laya, and TypeSafe Jev.
 
 [![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding)
 

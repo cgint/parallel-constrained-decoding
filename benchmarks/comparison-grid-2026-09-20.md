@@ -8,7 +8,7 @@ banking77/clinc150, deterministic label order for goemotions; 3 repetitions, 1 w
 
 ## The grid (quality = micro-F1 or top-1; latency = p50 client ms)
 
-| dataset | dspy-ON (qwen+think) | dspy-OFF (qwen) | rlcd (3 reps) | laya | gemini-lite | **jev (API, new)** |
+| dataset | dspy-ON (qwen+think) | dspy-OFF (qwen) | rlcd (3 reps) | laya | **dspy-GEMINI (hosted)** | **jev (API, new)** |
 |---|---|---|---|---|---|---|
 | **banking77** | 0.843 @850ms | **0.842 @168ms** | 0.290 / 0.290 / 0.290 @2032–2399ms | 0.345 @**31ms** | **0.860** @704ms | 0.827 @687ms |
 | **goemotions¹** | 0.376 @8068ms | 0.369 @7051ms | 0.120 / 0.120 / 0.120 @219–322ms | **0.378** @**126ms** | **0.384** @1062ms | 0.229 @418ms |
@@ -32,15 +32,17 @@ diagnostics (`comparison/results/power-goe/jev/`), so the cell can be re-derived
    (0.903 vs 0.875, 0.028 macro-level gain at 5× latency) and is neutral on goe (0.376 vs 0.369).
 3. **Laya = fastest by 6–25× everywhere, quality mid-pack.** On goe it matches qwen/gemini (0.378
    vs 0.376/0.384). On b77/clinc it trails the LLM arms by 2–2.6×. Latency: 31–126ms vs 168ms–8s.
-4. **Gemini-lite = best or tied-best quality on all 3 datasets** (0.860/0.384/0.912), at 3–30×
-   laya's latency and paid-API cost. This is the closed-API benchmark the corporate-alternative
-   idea must beat on cost-adjusted quality — not on raw quality.
+4. **DSPy on hosted Gemini 3.5 Flash-Lite = best or tied-best quality on all 3 datasets**
+   (0.860/0.384/0.912) — same DSPy harness/schema as the qwen columns, but routed through
+   Google's hosted API — at 3–30× laya's latency and paid-API cost. This is the closed-API
+   benchmark the corporate-alternative idea must beat on cost-adjusted quality — not on raw
+   quality.
 5. **The local-alternative shape, from this grid:** qwen-OFF (local, 168–222ms, 0.842–0.875 on
    the two intent datasets) is the strongest local arm; laya dominates latency; RLCD as-shipped is
    not competitive on quality for these presets.
 6. **Jev (closed API, added 09-23) is solid third on banking77 but never the top arm** (0.827
-   @687ms: below qwen-OFF's 0.842 @168ms, which is both better and ~4× faster; below gemini-lite
-   on quality). On clinc150 it clearly trails the LLM arms (0.727 vs 0.875–0.912), and on
+   @687ms: below qwen-OFF's 0.842 @168ms, which is both better and ~4× faster; below the
+   hosted-Gemini DSPy arm on quality). On clinc150 it clearly trails the LLM arms (0.727 vs 0.875–0.912), and on
    goemotions it sits above local RLCD (0.229 vs 0.120) but clearly below the LLM arms
    (0.369–0.384). The closed API is a drop-in convenience, not a quality reference, on all three
    datasets. All Jev cells measured n=600, 100% in-enum/in-schema across every request.
