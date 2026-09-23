@@ -11,11 +11,11 @@
 | | **This engine (RLCD)** | **DSPy** (programmatic LLM) | **Jev / TypeSafe** (API) |
 |---|---|---|---|
 | **Where it runs** | Your Mac (MLX, Apple Silicon) | Your Mac or server (any LLM) | Their cloud (API) |
-| **Latency** | **~75 ms** (local, 1.5B model) | 170–8,000 ms (depends on model) | ~700 ms (network hop) |
-| **Quality (77-way classification)** | 0.290 (weakest) | 0.842 (qwen 27B local) | n/a (vendor claims) |
+| **Latency** | **~75 ms** (local, 1.5B model) | 170–8,000 ms (depends on model) | p50 687 ms (measured 2026-09, network hop) |
+| **Quality (77-way classification)** | 0.290 (weakest) | 0.842 (qwen 27B local) | **0.827 (measured 2026-09, n=600)** |
 | **Cost** | Free (electricity) | Free (local) or API cost | ~$0.042/M input tokens |
 | **Data privacy** | **100% local** | Local if you use a local model | Sent to their API |
-| **Schema validity** | 100% guaranteed (constrained decode) | Depends on model + prompt | 100% (vendor claim) |
+| **Schema validity** | 100% guaranteed (constrained decode) | Depends on model + prompt | 100% in-enum in our 1,202 choice-primitive requests (2026-09); vendor claims 100% |
 | **Best at** | Bounded choices (≤4 options), Boolean fields, low-latency routing | Open classification, complex prompts, iteration | Drop-in structured API |
 
 > **Bottom line:** Use this engine when you need *fast, private, bounded-choice* decisions on a Mac. Use DSPy when you need *quality* on open classification and can tolerate higher latency. Use Jev when you want a *managed API* and don't mind sending data to the cloud. Full numbers: [`benchmarks/`](benchmarks/).
@@ -30,7 +30,8 @@
 
 > **Forked from** [harshatheg/Qwen-2.5-1B-RLCD](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) (Apache-2.0).
 > This fork adds full-token enum scoring (replacing the first-token collision fallback),
-> local benchmark experiments, and a comparison grid against DSPy, Laya, and Gemini.
+> local benchmark experiments, and a comparison grid against DSPy, Laya, Gemini, and
+> TypeSafe Jev.
 
 [![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding)
 
