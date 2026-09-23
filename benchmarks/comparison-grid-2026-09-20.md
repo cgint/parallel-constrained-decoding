@@ -8,7 +8,7 @@ banking77/clinc150, deterministic label order for goemotions; 3 repetitions, 1 w
 
 ## The grid (quality = micro-F1 or top-1; latency = p50 client ms)
 
-| dataset | dspy-ON (qwen+think) | dspy-OFF (qwen) | rlcd (3 reps) | laya | **dspy-GEMINI (hosted)** | **jev (API, new)** |
+| dataset | dspy · qwen · thinking ON | dspy · qwen · thinking OFF | rlcd (3 reps) | laya | **dspy · Gemini (hosted)** | **jev (API, new)** |
 |---|---|---|---|---|---|---|
 | **banking77** | 0.843 @850ms | **0.842 @168ms** | 0.290 / 0.290 / 0.290 @2032–2399ms | 0.345 @**31ms** | **0.860** @704ms | 0.827 @687ms |
 | **goemotions¹** | 0.376 @8068ms | 0.369 @7051ms | 0.120 / 0.120 / 0.120 @219–322ms | **0.378** @**126ms** | **0.384** @1062ms | 0.229 @418ms |
