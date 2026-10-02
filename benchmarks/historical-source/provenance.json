@@ -1,0 +1,1493 @@
+{
+  "archive": {
+    "laya_model_id": "aac6fef/laya-mlx",
+    "laya_upstream_commit": "fc1df62828a3fedf4d8229fdac1cbd85f1cdf337",
+    "laya_upstream_url": "https://github.com/mizorewww/laya-mlx",
+    "note": "laya_model_id is a Hugging Face model identifier, not a git revision. laya-mlx dependency stays upstream (Apache-2.0); not vendored in this package."
+  },
+  "archived_sources": {
+    "drivers/banking77_run_arms.sh": {
+      "byte_identical": true,
+      "original_relative_path": "agent/raw/2026-09-20-power-banking77/run_arms.sh",
+      "sha256_archived_copy": "fab2d1370ff80fac7c7e5b4b817606455f3b5f05a5a9643d43838d772ac914ed",
+      "sha256_original": "fab2d1370ff80fac7c7e5b4b817606455f3b5f05a5a9643d43838d772ac914ed",
+      "size_bytes": 1951
+    },
+    "drivers/clinc150_run_arms.py": {
+      "byte_identical": true,
+      "original_relative_path": "agent/raw/2026-09-20-power-clinc150/run_clinc150_arms.py",
+      "sha256_archived_copy": "1063f1ba4bc3f2b802104b5a3ede9e1889dc69716fa6bc73728b2b1e89b13f68",
+      "sha256_original": "1063f1ba4bc3f2b802104b5a3ede9e1889dc69716fa6bc73728b2b1e89b13f68",
+      "size_bytes": 3708
+    },
+    "drivers/clinc150_run_phase2.py": {
+      "byte_identical": true,
+      "original_relative_path": "agent/raw/2026-09-20-power-clinc150/run_phase2.py",
+      "sha256_archived_copy": "8caabf9158fa05b4b9181423a3db2bc0b1f66d1aa5135521ea1fde68df9a6a38",
+      "sha256_original": "8caabf9158fa05b4b9181423a3db2bc0b1f66d1aa5135521ea1fde68df9a6a38",
+      "size_bytes": 5523
+    },
+    "drivers/goemotions_run_all_arms.sh": {
+      "byte_identical": true,
+      "original_relative_path": "agent/raw/2026-09-20-power-goemotions/run_all_arms.sh",
+      "sha256_archived_copy": "76c7a28195543f0c66c296263e84e72440f5bd9140dbab07a25e0d43359f8083",
+      "sha256_original": "76c7a28195543f0c66c296263e84e72440f5bd9140dbab07a25e0d43359f8083",
+      "size_bytes": 1198
+    },
+    "drivers/nova_serial.sh": {
+      "byte_identical": true,
+      "original_relative_path": "agent/scratch/ragna/nova_serial.sh",
+      "sha256_archived_copy": "792439c68a6381ce20aa9102a58728e53471d54603bf3c2acc1ad265870d8ee8",
+      "sha256_original": "792439c68a6381ce20aa9102a58728e53471d54603bf3c2acc1ad265870d8ee8",
+      "size_bytes": 3874
+    },
+    "drivers/remote_serial.sh": {
+      "byte_identical": true,
+      "original_relative_path": "agent/scratch/ragna/remote_serial.sh",
+      "sha256_archived_copy": "747df745c9fd1412d13552340d761e7ea6714f32a4d3923bfaf3cca7d14030d2",
+      "sha256_original": "747df745c9fd1412d13552340d761e7ea6714f32a4d3923bfaf3cca7d14030d2",
+      "size_bytes": 2103
+    },
+    "laya/camp_runner2.py": {
+      "byte_identical": true,
+      "original_relative_path": "agent/scratch/ragna/laya-mlx/camp_runner2.py",
+      "sha256_archived_copy": "89121eba5ba08c28d15a2200449a8dd96d4595513757fd8bf584292a45592262",
+      "sha256_original": "89121eba5ba08c28d15a2200449a8dd96d4595513757fd8bf584292a45592262",
+      "size_bytes": 13491
+    }
+  },
+  "packaged_at": "2026-10-02",
+  "published_files": {
+    "comparison/README.md": {
+      "in_baseline_report": false,
+      "matches_baseline_report": false,
+      "sha256": "325575ca89307263b599cbe55f276c91ad32ef884e5447b97d7c8f94c3792861",
+      "size_bytes": 3503
+    },
+    "comparison/__init__.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "d3406431b56347389f16cca1162b2d5f5f1dc619b3748aa136a1c5635759700b",
+      "size_bytes": 149
+    },
+    "comparison/adapters/__init__.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "8724c337987315f178c565f493d8e405d9a9b771fd5d361633d0d42aa2db2435",
+      "size_bytes": 156
+    },
+    "comparison/adapters/base.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "6d9997790c99e7dfb553dd92eec590c79e85296e0fb9e3c52688c07067047997",
+      "size_bytes": 402
+    },
+    "comparison/adapters/dspy_adapter.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "8164bc011e47ac8082084fd6344c72fde767ae7ec4a5fec46f1b878c77d0d0bd",
+      "size_bytes": 5240
+    },
+    "comparison/adapters/jev.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "40f5e3ecc7add7e670149eeb55abf106782da60470ec33f39ae1aff37d0bf287",
+      "size_bytes": 11440
+    },
+    "comparison/adapters/rlcd.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "3dd51e8e0b04c16b1c11a7b6b746cce3c56567998d2f928c0cd8a127f808efa1",
+      "size_bytes": 3796
+    },
+    "comparison/dataset.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "a2b8b4eae3974ec63bdfaad6913e062eeba1ae8622c2d40eae18f7ae2c95d87e",
+      "size_bytes": 5225
+    },
+    "comparison/datasets/routing_v1.json": {
+      "in_baseline_report": false,
+      "matches_baseline_report": false,
+      "sha256": "6075879efb08d6befc32de98f79f2976a7e6050973634f1dc9567d65eb11560d",
+      "size_bytes": 389460
+    },
+    "comparison/metrics.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "f7f659b9e0b1964abd23f6a4ed8166ab4a77243e2a0037b4fed87b2d4eb0e654",
+      "size_bytes": 4744
+    },
+    "comparison/models.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "dcd63d006681a45f5bff32a4c619324b4dd1a707a4c1ebb0c7a088bcc267bfd4",
+      "size_bytes": 2756
+    },
+    "comparison/multi_field/__init__.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "comparison/multi_field/adapters.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "91221c4c57ce28a0e99484bb67d921bee7365bc45313d35dfc359271826a5115",
+      "size_bytes": 11080
+    },
+    "comparison/multi_field/dataset.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "80dca7321bb7dd110d2d81c6a59c6c6eb809aab1059e0fd2229ea7c5ebfb2100",
+      "size_bytes": 11161
+    },
+    "comparison/multi_field/djev_adapter.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "ef276476f3bd409fcbdbd009c5bc718af8f106d6dc80331156a60c02b12acddd",
+      "size_bytes": 9117
+    },
+    "comparison/multi_field/metrics.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "8961df15b45cb9f9f0d9a5cb294a0012dc97dc307223533f0ccdcd63e28e997e",
+      "size_bytes": 4441
+    },
+    "comparison/multi_field/models.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "a6fb7ce4caa181f8cd193e8fa3aad8e1469a58cbd9b8d0ce62af8f9f73cd41b7",
+      "size_bytes": 1264
+    },
+    "comparison/multi_field/run.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "57804d664b4884e45780f1d4db75d1aabdce70a6d9054f8c9890edd3b460d234",
+      "size_bytes": 7949
+    },
+    "comparison/run.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "208bf9bde762e2f26f9c22d6d1f68d149aea5b2fd6cb61728077e744c57ad425",
+      "size_bytes": 9662
+    },
+    "comparison/tests/test_banking77.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "85a7f52c8c43f580b4c813c78d0585d6e983e033c0bc8c376f9a5f4a692c6860",
+      "size_bytes": 1738
+    },
+    "comparison/tests/test_clinc150_dataset.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "6335bfccdc7a4de5ef99a8588f3783d8b76195bad2e0cb737c1a6a63af72dc72",
+      "size_bytes": 4112
+    },
+    "comparison/tests/test_dataset_metrics.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "46597c17292bf93310c109d53cff3bd00388813181b8cf35fa150bac8ed76933",
+      "size_bytes": 4869
+    },
+    "comparison/tests/test_djev_adapter.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "972bc5bab599f31b5ca7478b302b3a28e2a61845247c3c1f6d0b03a14cc3cb12",
+      "size_bytes": 6299
+    },
+    "comparison/tests/test_dspy_adapter.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "9acc4405fef045d4060bf1ae32b960e8c6adabd96e03fa736ea857e2e696aa1d",
+      "size_bytes": 4782
+    },
+    "comparison/tests/test_mlx_enum_scoring.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "30d512be563e1a1e042caf64c9e193d5bce62c53e1371f0ffd5d9203813b5b32",
+      "size_bytes": 8075
+    },
+    "comparison/tests/test_models.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "991e72c22d17f0007d788179489cf642691db1a9662d2df5e86941a0bec77f9b",
+      "size_bytes": 4569
+    },
+    "comparison/tests/test_multi_field.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "e42df8ddf795a8c2acc91c6cc9e3a760e0616d339519d064a11e750e0b8cf2df",
+      "size_bytes": 5245
+    },
+    "comparison/tests/test_multi_field_jev_gate.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "7b3d2836a5ed7b564b58271516164a1fe2c740cac925a62cdb794d49898a405e",
+      "size_bytes": 17359
+    },
+    "comparison/tests/test_provider_adapters.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "78cd311a9ddc55dd9047480deb3eddba4e7334542bc09c4dbd69c30c9b0da74f",
+      "size_bytes": 8332
+    },
+    "comparison/tests/test_runner.py": {
+      "in_baseline_report": true,
+      "matches_baseline_report": true,
+      "sha256": "470cb1ac596c3260afa324043af875ec5480292a98339088169a88cd7a4d1ab5",
+      "size_bytes": 5725
+    }
+  },
+  "purpose": "Snapshot provenance for benchmarks/historical-source: archived original source files (hashes) and the 24 published source-run mappings/settings/summary metrics, as inspected at packaging time.",
+  "runs": {
+    "banking77": {
+      "dspy-OFF": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "banking77",
+          "limit": 200,
+          "providers": [
+            "dspy"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.7877798113930048,
+          "n": 600,
+          "p50_ms": 167.5234165013535,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.8416666666666667
+        },
+        "source_run": "power-b77-qwen-off",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "dspy-ON": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "banking77",
+          "limit": 200,
+          "providers": [
+            "dspy"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.7917101519223798,
+          "n": 600,
+          "p50_ms": 849.9552909925114,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.8430717863105175
+        },
+        "source_run": "camp-dspy-on-banking77",
+        "status_counts": {
+          "error": 1,
+          "ok": 599
+        }
+      },
+      "gemini": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "banking77",
+          "limit": 200,
+          "providers": [
+            "dspy"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.8179077993470794,
+          "n": 600,
+          "p50_ms": 703.6910625029122,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.86
+        },
+        "source_run": "camp-gemini-banking77",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "jev": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "banking77",
+          "limit": 200,
+          "providers": [
+            "jev"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.7748145654255959,
+          "n": 600,
+          "p50_ms": 687.2430414950941,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.8266666666666667
+        },
+        "source_run": "power-b77-jev",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "laya": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "cell": "camp-laya-banking77",
+          "command": "PYTHONPATH=. .venv/bin/python agent/scratch/ragna/laya-mlx/camp_runner2.py laya banking77",
+          "concurrency": 1,
+          "dataset": "banking77",
+          "git": {
+            "commit": null
+          },
+          "limit": 200,
+          "model": "laya-mlx (aac6fef/laya-mlx)",
+          "provider": "laya",
+          "repetitions": 3,
+          "selected_case_ids": [
+            "banking77-test-2594",
+            "banking77-test-402",
+            "banking77-test-1437",
+            "banking77-test-571",
+            "banking77-test-2682",
+            "banking77-test-3065",
+            "banking77-test-1386",
+            "banking77-test-1647",
+            "banking77-test-2950",
+            "banking77-test-2295",
+            "banking77-test-1147",
+            "banking77-test-227",
+            "banking77-test-256",
+            "banking77-test-1753",
+            "banking77-test-380",
+            "banking77-test-2203",
+            "banking77-test-92",
+            "banking77-test-1302",
+            "banking77-test-2412",
+            "banking77-test-2811",
+            "banking77-test-96",
+            "banking77-test-1570",
+            "banking77-test-15",
+            "banking77-test-148",
+            "banking77-test-2761",
+            "banking77-test-2697",
+            "banking77-test-2047",
+            "banking77-test-2528",
+            "banking77-test-946",
+            "banking77-test-2190",
+            "banking77-test-1095",
+            "banking77-test-2254",
+            "banking77-test-2200",
+            "banking77-test-679",
+            "banking77-test-2878",
+            "banking77-test-512",
+            "banking77-test-1331",
+            "banking77-test-1931",
+            "banking77-test-406",
+            "banking77-test-415",
+            "banking77-test-341",
+            "banking77-test-17",
+            "banking77-test-55",
+            "banking77-test-854",
+            "banking77-test-1059",
+            "banking77-test-635",
+            "banking77-test-331",
+            "banking77-test-2966",
+            "banking77-test-2022",
+            "banking77-test-1497",
+            "banking77-test-1040",
+            "banking77-test-47",
+            "banking77-test-3060",
+            "banking77-test-1731",
+            "banking77-test-2801",
+            "banking77-test-2567",
+            "banking77-test-1739",
+            "banking77-test-2324",
+            "banking77-test-2087",
+            "banking77-test-2862",
+            "banking77-test-919",
+            "banking77-test-416",
+            "banking77-test-278",
+            "banking77-test-2521",
+            "banking77-test-338",
+            "banking77-test-904",
+            "banking77-test-755",
+            "banking77-test-184",
+            "banking77-test-1810",
+            "banking77-test-3068",
+            "banking77-test-897",
+            "banking77-test-2792",
+            "banking77-test-759",
+            "banking77-test-2282",
+            "banking77-test-2342",
+            "banking77-test-2987",
+            "banking77-test-1948",
+            "banking77-test-1705",
+            "banking77-test-745",
+            "banking77-test-2255",
+            "banking77-test-202",
+            "banking77-test-2206",
+            "banking77-test-2358",
+            "banking77-test-1276",
+            "banking77-test-740",
+            "banking77-test-1796",
+            "banking77-test-136",
+            "banking77-test-2449",
+            "banking77-test-2945",
+            "banking77-test-807",
+            "banking77-test-489",
+            "banking77-test-335",
+            "banking77-test-2699",
+            "banking77-test-2334",
+            "banking77-test-2479",
+            "banking77-test-2178",
+            "banking77-test-2198",
+            "banking77-test-326",
+            "banking77-test-1511",
+            "banking77-test-261",
+            "banking77-test-750",
+            "banking77-test-1671",
+            "banking77-test-631",
+            "banking77-test-1231",
+            "banking77-test-2946",
+            "banking77-test-2290",
+            "banking77-test-1635",
+            "banking77-test-2043",
+            "banking77-test-821",
+            "banking77-test-791",
+            "banking77-test-327",
+            "banking77-test-2250",
+            "banking77-test-1393",
+            "banking77-test-390",
+            "banking77-test-2646",
+            "banking77-test-813",
+            "banking77-test-1258",
+            "banking77-test-2113",
+            "banking77-test-1260",
+            "banking77-test-2836",
+            "banking77-test-925",
+            "banking77-test-2766",
+            "banking77-test-789",
+            "banking77-test-1175",
+            "banking77-test-2723",
+            "banking77-test-2832",
+            "banking77-test-1563",
+            "banking77-test-1610",
+            "banking77-test-1864",
+            "banking77-test-1081",
+            "banking77-test-325",
+            "banking77-test-1546",
+            "banking77-test-2873",
+            "banking77-test-2258",
+            "banking77-test-71",
+            "banking77-test-2468",
+            "banking77-test-1822",
+            "banking77-test-58",
+            "banking77-test-65",
+            "banking77-test-2570",
+            "banking77-test-2216",
+            "banking77-test-1694",
+            "banking77-test-1390",
+            "banking77-test-1282",
+            "banking77-test-189",
+            "banking77-test-258",
+            "banking77-test-2833",
+            "banking77-test-1505",
+            "banking77-test-1551",
+            "banking77-test-972",
+            "banking77-test-942",
+            "banking77-test-204",
+            "banking77-test-1553",
+            "banking77-test-752",
+            "banking77-test-1579",
+            "banking77-test-965",
+            "banking77-test-2750",
+            "banking77-test-2746",
+            "banking77-test-2633",
+            "banking77-test-1065",
+            "banking77-test-2943",
+            "banking77-test-102",
+            "banking77-test-1294",
+            "banking77-test-2239",
+            "banking77-test-1593",
+            "banking77-test-508",
+            "banking77-test-651",
+            "banking77-test-2874",
+            "banking77-test-893",
+            "banking77-test-1220",
+            "banking77-test-2133",
+            "banking77-test-818",
+            "banking77-test-1226",
+            "banking77-test-707",
+            "banking77-test-718",
+            "banking77-test-2025",
+            "banking77-test-276",
+            "banking77-test-964",
+            "banking77-test-448",
+            "banking77-test-2350",
+            "banking77-test-2533",
+            "banking77-test-1600",
+            "banking77-test-963",
+            "banking77-test-436",
+            "banking77-test-412",
+            "banking77-test-2280",
+            "banking77-test-1422",
+            "banking77-test-2401",
+            "banking77-test-170",
+            "banking77-test-658",
+            "banking77-test-770",
+            "banking77-test-2934",
+            "banking77-test-149",
+            "banking77-test-933",
+            "banking77-test-369",
+            "banking77-test-447",
+            "banking77-test-2618",
+            "banking77-test-313",
+            "banking77-test-2397",
+            "banking77-test-2145"
+          ],
+          "utc_started": "2026-09-20T20:02:47Z",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.2906089080002123,
+          "n": 600,
+          "p50_ms": 30.63524999015499,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.345
+        },
+        "source_run": "camp-laya-banking77",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "rlcd-1": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "concurrency": 1,
+          "dataset": "banking77",
+          "limit": 200,
+          "providers": [
+            "rlcd"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.23998909424671683,
+          "n": 600,
+          "p50_ms": 2181.4888959925156,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.29
+        },
+        "source_run": "power-rlcd-banking77-rep1",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "rlcd-2": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "concurrency": 1,
+          "dataset": "banking77",
+          "limit": 200,
+          "providers": [
+            "rlcd"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.23998909424671683,
+          "n": 600,
+          "p50_ms": 2031.9047704833793,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.29
+        },
+        "source_run": "power-rlcd-banking77-rep2",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "rlcd-3": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "concurrency": 1,
+          "dataset": "banking77",
+          "limit": 200,
+          "providers": [
+            "rlcd"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.23998909424671683,
+          "n": 600,
+          "p50_ms": 2398.967083514435,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.29
+        },
+        "source_run": "power-rlcd-banking77-rep3",
+        "status_counts": {
+          "ok": 600
+        }
+      }
+    },
+    "clinc150": {
+      "dspy-OFF": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "clinc150",
+          "limit": 200,
+          "providers": [
+            "dspy"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.8811401263014167,
+          "n": 600,
+          "p50_ms": 222.2608960000798,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.875
+        },
+        "source_run": "camp-dspy-off-clinc150",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "dspy-ON": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "clinc150",
+          "limit": 200,
+          "providers": [
+            "dspy"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.9165648457094577,
+          "n": 600,
+          "p50_ms": 1079.2322090128437,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.9028475711892797
+        },
+        "source_run": "camp-dspy-on-clinc150",
+        "status_counts": {
+          "error": 3,
+          "ok": 597
+        }
+      },
+      "gemini": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "clinc150",
+          "limit": 200,
+          "providers": [
+            "dspy"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.9242111645615539,
+          "n": 600,
+          "p50_ms": 4457.933937010239,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.9116666666666666
+        },
+        "source_run": "camp-gemini-clinc150",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "jev": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "clinc150",
+          "limit": 200,
+          "providers": [
+            "jev"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.828423372030948,
+          "n": 600,
+          "p50_ms": 427.1015415142756,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.7266666666666667
+        },
+        "source_run": "clinc150-20260920-power/jev",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "laya": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "cell": "camp-laya-clinc150",
+          "command": "PYTHONPATH=. .venv/bin/python agent/scratch/ragna/laya-mlx/camp_runner2.py laya clinc150",
+          "concurrency": 1,
+          "dataset": "clinc150",
+          "git": {
+            "commit": null
+          },
+          "limit": 200,
+          "model": "laya-mlx (aac6fef/laya-mlx)",
+          "provider": "laya",
+          "repetitions": 3,
+          "selected_case_ids": [
+            "clinc150-5189",
+            "clinc150-805",
+            "clinc150-2875",
+            "clinc150-1142",
+            "clinc150-5364",
+            "clinc150-2773",
+            "clinc150-3295",
+            "clinc150-4590",
+            "clinc150-2295",
+            "clinc150-454",
+            "clinc150-512",
+            "clinc150-3506",
+            "clinc150-761",
+            "clinc150-4406",
+            "clinc150-184",
+            "clinc150-2605",
+            "clinc150-4824",
+            "clinc150-192",
+            "clinc150-3140",
+            "clinc150-31",
+            "clinc150-297",
+            "clinc150-5394",
+            "clinc150-4095",
+            "clinc150-5056",
+            "clinc150-1892",
+            "clinc150-4380",
+            "clinc150-2191",
+            "clinc150-4509",
+            "clinc150-4400",
+            "clinc150-1359",
+            "clinc150-1025",
+            "clinc150-2662",
+            "clinc150-3862",
+            "clinc150-812",
+            "clinc150-831",
+            "clinc150-682",
+            "clinc150-34",
+            "clinc150-110",
+            "clinc150-1708",
+            "clinc150-2118",
+            "clinc150-1271",
+            "clinc150-662",
+            "clinc150-4045",
+            "clinc150-2994",
+            "clinc150-2081",
+            "clinc150-95",
+            "clinc150-3463",
+            "clinc150-5135",
+            "clinc150-3479",
+            "clinc150-4648",
+            "clinc150-4174",
+            "clinc150-1839",
+            "clinc150-833",
+            "clinc150-556",
+            "clinc150-5043",
+            "clinc150-677",
+            "clinc150-1808",
+            "clinc150-1510",
+            "clinc150-368",
+            "clinc150-3620",
+            "clinc150-1795",
+            "clinc150-1518",
+            "clinc150-4565",
+            "clinc150-4684",
+            "clinc150-3896",
+            "clinc150-3411",
+            "clinc150-1490",
+            "clinc150-4511",
+            "clinc150-404",
+            "clinc150-4413",
+            "clinc150-4717",
+            "clinc150-2553",
+            "clinc150-1480",
+            "clinc150-3593",
+            "clinc150-272",
+            "clinc150-4899",
+            "clinc150-1615",
+            "clinc150-979",
+            "clinc150-671",
+            "clinc150-5399",
+            "clinc150-4669",
+            "clinc150-4959",
+            "clinc150-2995",
+            "clinc150-4357",
+            "clinc150-4396",
+            "clinc150-653",
+            "clinc150-3022",
+            "clinc150-522",
+            "clinc150-1501",
+            "clinc150-3343",
+            "clinc150-1263",
+            "clinc150-2462",
+            "clinc150-4581",
+            "clinc150-3271",
+            "clinc150-4086",
+            "clinc150-1642",
+            "clinc150-1583",
+            "clinc150-655",
+            "clinc150-4501",
+            "clinc150-2786",
+            "clinc150-781",
+            "clinc150-5293",
+            "clinc150-1627",
+            "clinc150-2517",
+            "clinc150-4227",
+            "clinc150-2521",
+            "clinc150-1851",
+            "clinc150-1579",
+            "clinc150-2351",
+            "clinc150-5447",
+            "clinc150-3127",
+            "clinc150-3220",
+            "clinc150-3728",
+            "clinc150-2163",
+            "clinc150-651",
+            "clinc150-3092",
+            "clinc150-4516",
+            "clinc150-142",
+            "clinc150-4936",
+            "clinc150-3644",
+            "clinc150-117",
+            "clinc150-131",
+            "clinc150-5140",
+            "clinc150-4433",
+            "clinc150-3389",
+            "clinc150-2781",
+            "clinc150-2564",
+            "clinc150-379",
+            "clinc150-516",
+            "clinc150-3010",
+            "clinc150-3103",
+            "clinc150-1944",
+            "clinc150-1884",
+            "clinc150-409",
+            "clinc150-3107",
+            "clinc150-1504",
+            "clinc150-3159",
+            "clinc150-1930",
+            "clinc150-5493",
+            "clinc150-1270",
+            "clinc150-5266",
+            "clinc150-2130",
+            "clinc150-204",
+            "clinc150-2588",
+            "clinc150-4479",
+            "clinc150-3186",
+            "clinc150-1017",
+            "clinc150-1302",
+            "clinc150-1787",
+            "clinc150-2441",
+            "clinc150-4266",
+            "clinc150-1636",
+            "clinc150-2453",
+            "clinc150-1415",
+            "clinc150-1437",
+            "clinc150-4051",
+            "clinc150-553",
+            "clinc150-1928",
+            "clinc150-896",
+            "clinc150-4701",
+            "clinc150-5066",
+            "clinc150-3200",
+            "clinc150-1927",
+            "clinc150-873",
+            "clinc150-824",
+            "clinc150-4561",
+            "clinc150-2844",
+            "clinc150-4802",
+            "clinc150-340",
+            "clinc150-1317",
+            "clinc150-1540",
+            "clinc150-298",
+            "clinc150-1867",
+            "clinc150-738",
+            "clinc150-894",
+            "clinc150-5236",
+            "clinc150-626",
+            "clinc150-4794",
+            "clinc150-4290",
+            "clinc150-572",
+            "clinc150-72",
+            "clinc150-3379",
+            "clinc150-4029",
+            "clinc150-3237",
+            "clinc150-1514",
+            "clinc150-663",
+            "clinc150-2681",
+            "clinc150-2539",
+            "clinc150-1438",
+            "clinc150-4805",
+            "clinc150-3922",
+            "clinc150-3988",
+            "clinc150-3977",
+            "clinc150-4806",
+            "clinc150-4705",
+            "clinc150-1028",
+            "clinc150-4393",
+            "clinc150-4273",
+            "clinc150-2148",
+            "clinc150-376"
+          ],
+          "utc_started": "2026-09-20T19:18:09Z",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.4697505003956615,
+          "n": 600,
+          "p50_ms": 90.83435450156685,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.43
+        },
+        "source_run": "camp-laya-clinc150",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "rlcd-1": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "concurrency": 1,
+          "dataset": "clinc150",
+          "limit": 200,
+          "providers": [
+            "rlcd"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.26368205953459406,
+          "n": 600,
+          "p50_ms": 3814.939187504933,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.31
+        },
+        "source_run": "camp-rlcd-clinc150",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "rlcd-2": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "concurrency": 1,
+          "dataset": "clinc150",
+          "limit": 200,
+          "providers": [
+            "rlcd"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.26368205953459406,
+          "n": 600,
+          "p50_ms": 4522.717562504113,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.31
+        },
+        "source_run": "power-rlcd-clinc150-rep2",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "rlcd-3": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "concurrency": 1,
+          "dataset": "clinc150",
+          "limit": 200,
+          "providers": [
+            "rlcd"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "random sample without replacement using fixed seed 20260919",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "macro_f1_present_gold_classes": 0.26368205953459406,
+          "n": 600,
+          "p50_ms": 3940.460270488984,
+          "strict_schema_adherence": 1.0,
+          "top1_accuracy": 0.31
+        },
+        "source_run": "power-rlcd-clinc150-rep3",
+        "status_counts": {
+          "ok": 600
+        }
+      }
+    },
+    "goemotions": {
+      "dspy-OFF": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "goemotions",
+          "limit": 200,
+          "providers": [
+            "dspy"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "first unseen positive example per canonical label in label order, then remaining test dataset order; deterministic",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "all_field_exact_record_match": 0.18333333333333332,
+          "hamming_loss": 0.0718452380952381,
+          "macro_f1_supported": 0.40782341746982437,
+          "micro_f1": 0.36905384213277576,
+          "n": 600,
+          "p50_ms": 7050.938542000949,
+          "strict_schema_adherence": 1.0
+        },
+        "source_run": "camp-dspy-off-goemotions",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "dspy-ON": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "goemotions",
+          "limit": 200,
+          "providers": [
+            "dspy"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "first unseen positive example per canonical label in label order, then remaining test dataset order; deterministic",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "all_field_exact_record_match": 0.2020033388981636,
+          "hamming_loss": 0.07101120915812068,
+          "macro_f1_supported": 0.4170024451969317,
+          "micro_f1": 0.37611314824515457,
+          "n": 600,
+          "p50_ms": 8067.777167016175,
+          "strict_schema_adherence": 1.0
+        },
+        "source_run": "camp-dspy-on-goemotions",
+        "status_counts": {
+          "error": 1,
+          "ok": 599
+        }
+      },
+      "gemini": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "goemotions",
+          "limit": 200,
+          "providers": [
+            "dspy"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "first unseen positive example per canonical label in label order, then remaining test dataset order; deterministic",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "all_field_exact_record_match": 0.215,
+          "hamming_loss": 0.06660714285714285,
+          "macro_f1_supported": 0.416612591130224,
+          "micro_f1": 0.3841496973032471,
+          "n": 600,
+          "p50_ms": 1062.0500829973025,
+          "strict_schema_adherence": 1.0
+        },
+        "source_run": "camp-gemini-goemotions",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "jev": {
+        "manifest_settings": {
+          "allow_paid": true,
+          "concurrency": 1,
+          "dataset": "goemotions",
+          "limit": 200,
+          "providers": [
+            "jev"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "first unseen positive example per canonical label in label order, then remaining test dataset order; deterministic",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "all_field_exact_record_match": 0.025,
+          "hamming_loss": 0.16648809523809524,
+          "macro_f1_supported": 0.24894008985663624,
+          "micro_f1": 0.22883926109732558,
+          "n": 600,
+          "p50_ms": 417.9043539916165,
+          "strict_schema_adherence": 1.0
+        },
+        "source_run": "power-goe/jev",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "laya": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "cell": "camp-laya-goemotions",
+          "command": "PYTHONPATH=. .venv/bin/python agent/scratch/ragna/laya-mlx/camp_runner2.py laya goemotions",
+          "concurrency": 1,
+          "dataset": "goemotions",
+          "git": {
+            "commit": null
+          },
+          "limit": 200,
+          "model": "laya-mlx (aac6fef/laya-mlx)",
+          "provider": "laya",
+          "repetitions": 3,
+          "selected_case_ids": [
+            "goemotions-ed5f85d",
+            "goemotions-ee3yyz3",
+            "goemotions-ee3cjuy",
+            "goemotions-eeaf7fg",
+            "goemotions-ee3lt53",
+            "goemotions-ed3fb5o",
+            "goemotions-ednoz16",
+            "goemotions-eeccgbb",
+            "goemotions-eegij2q",
+            "goemotions-ef2d4r4",
+            "goemotions-eemuu4u",
+            "goemotions-ee3er1y",
+            "goemotions-ed0wflq",
+            "goemotions-een27c3",
+            "goemotions-edk4e66",
+            "goemotions-eelgwd1",
+            "goemotions-edts5dr",
+            "goemotions-ef0puf0",
+            "goemotions-edlolx7",
+            "goemotions-ef14jkh",
+            "goemotions-ef40zom",
+            "goemotions-efe9gy5",
+            "goemotions-ee9ejps",
+            "goemotions-eedek9c",
+            "goemotions-ee8utmi",
+            "goemotions-eecwqtt",
+            "goemotions-ees8ic1",
+            "goemotions-eem5uti",
+            "goemotions-ef2nq7i",
+            "goemotions-efdbh17",
+            "goemotions-ef0ec3b",
+            "goemotions-eeni74k",
+            "goemotions-ed2e00i",
+            "goemotions-eezp1cd",
+            "goemotions-eearbor",
+            "goemotions-ee5usgu",
+            "goemotions-eeyh5zd",
+            "goemotions-edl0qqn",
+            "goemotions-edqu2eu",
+            "goemotions-edr2ac7",
+            "goemotions-efcweyl",
+            "goemotions-edud7ko",
+            "goemotions-ed2owpy",
+            "goemotions-ed7xq99",
+            "goemotions-edlt8ec",
+            "goemotions-ed8llym",
+            "goemotions-efbc6vs",
+            "goemotions-eexh9wg",
+            "goemotions-effp5yy",
+            "goemotions-ee2k9xt",
+            "goemotions-eebevzm",
+            "goemotions-eewl3mr",
+            "goemotions-ed79rh8",
+            "goemotions-ee1veao",
+            "goemotions-edmjk91",
+            "goemotions-eeq3vim",
+            "goemotions-ecznohs",
+            "goemotions-efh4i9q",
+            "goemotions-ed9tl7w",
+            "goemotions-eeb3qct",
+            "goemotions-effpzpj",
+            "goemotions-ee91vnl",
+            "goemotions-eezyizq",
+            "goemotions-eergt89",
+            "goemotions-edu78sc",
+            "goemotions-edwusd2",
+            "goemotions-edu3ej8",
+            "goemotions-edh4bh0",
+            "goemotions-ee6r3z3",
+            "goemotions-eelcrmi",
+            "goemotions-ee4i1fa",
+            "goemotions-eenqt5a",
+            "goemotions-edw7914",
+            "goemotions-eduhsgm",
+            "goemotions-ed6i4q3",
+            "goemotions-edafngg",
+            "goemotions-ee5s4hc",
+            "goemotions-ef8a2jr",
+            "goemotions-ef9jsun",
+            "goemotions-eel5zy8",
+            "goemotions-eepas3b",
+            "goemotions-eddtkaz",
+            "goemotions-edv9e8a",
+            "goemotions-eeq65gb",
+            "goemotions-edpi4i4",
+            "goemotions-ee2miso",
+            "goemotions-edlghte",
+            "goemotions-efez3zf",
+            "goemotions-efew04b",
+            "goemotions-ef36pjp",
+            "goemotions-eezwk3v",
+            "goemotions-ee61xwb",
+            "goemotions-eeknym4",
+            "goemotions-edzpqou",
+            "goemotions-edpy7ic",
+            "goemotions-effht3y",
+            "goemotions-eduzgrd",
+            "goemotions-efaangf",
+            "goemotions-eem0tr0",
+            "goemotions-ed2270m",
+            "goemotions-efe4dav",
+            "goemotions-eeglc1u",
+            "goemotions-ed99kw8",
+            "goemotions-efb2j1c",
+            "goemotions-ef6bmgl",
+            "goemotions-eeefyb7",
+            "goemotions-edx9el4",
+            "goemotions-ef7nqh3",
+            "goemotions-eczpg76",
+            "goemotions-eepd52b",
+            "goemotions-eesstwu",
+            "goemotions-edpnfan",
+            "goemotions-ed7101k",
+            "goemotions-edydipg",
+            "goemotions-edfa1xi",
+            "goemotions-ef034gw",
+            "goemotions-edhi0is",
+            "goemotions-edcbf6y",
+            "goemotions-ed9g2pm",
+            "goemotions-edgzi2r",
+            "goemotions-eemvyc7",
+            "goemotions-edhyt2k",
+            "goemotions-edw8ngq",
+            "goemotions-ednv08m",
+            "goemotions-ef8zi31",
+            "goemotions-edj2w4y",
+            "goemotions-edz6ueh",
+            "goemotions-edgh3zs",
+            "goemotions-eel4gs7",
+            "goemotions-eeshw8b",
+            "goemotions-ed3yh0x",
+            "goemotions-ee6yip2",
+            "goemotions-ef83od5",
+            "goemotions-eeqrehq",
+            "goemotions-eey7nln",
+            "goemotions-edafb8b",
+            "goemotions-edmv56b",
+            "goemotions-ee8yo65",
+            "goemotions-edec3p2",
+            "goemotions-ee72nwi",
+            "goemotions-eeaneup",
+            "goemotions-edlh3uc",
+            "goemotions-ed4bex7",
+            "goemotions-eerxgyw",
+            "goemotions-efegrrd",
+            "goemotions-edarr34",
+            "goemotions-eedca2p",
+            "goemotions-edoylkl",
+            "goemotions-edt4eie",
+            "goemotions-edzabio",
+            "goemotions-ed4wohn",
+            "goemotions-ee8f04x",
+            "goemotions-ed3az8l",
+            "goemotions-efdvxbg",
+            "goemotions-eeylnbj",
+            "goemotions-eetll9u",
+            "goemotions-edwigye",
+            "goemotions-eeb38o6",
+            "goemotions-ednydkc",
+            "goemotions-eeo4tmk",
+            "goemotions-ee3f3rb",
+            "goemotions-ef8bvwo",
+            "goemotions-ed8dzji",
+            "goemotions-edms25d",
+            "goemotions-efg4yc0",
+            "goemotions-ef9e6q1",
+            "goemotions-ef140vi",
+            "goemotions-eel6gvc",
+            "goemotions-eevyxqa",
+            "goemotions-ed6qwkd",
+            "goemotions-ee6pk8e",
+            "goemotions-ed6baxy",
+            "goemotions-ef4byo4",
+            "goemotions-efhc56l",
+            "goemotions-eennz0q",
+            "goemotions-edokp85",
+            "goemotions-eeveo5j",
+            "goemotions-ee5t62n",
+            "goemotions-edlcpd2",
+            "goemotions-efh1if9",
+            "goemotions-edvbkon",
+            "goemotions-edwn8se",
+            "goemotions-ee2728j",
+            "goemotions-edlrjtg",
+            "goemotions-eejn8qt",
+            "goemotions-eemdkb8",
+            "goemotions-ef5jr6d",
+            "goemotions-ed81xss",
+            "goemotions-ed6sg09",
+            "goemotions-ed8goyk",
+            "goemotions-ed7zetw",
+            "goemotions-ef86g11",
+            "goemotions-eedb4yi",
+            "goemotions-eer3ivh",
+            "goemotions-edpufd4",
+            "goemotions-ee5gb4z",
+            "goemotions-ed6kkav",
+            "goemotions-edh8fue",
+            "goemotions-ed47cy9",
+            "goemotions-ef7mlrx"
+          ],
+          "utc_started": "2026-09-20T19:16:26Z",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "all_field_exact_record_match": 0.13,
+          "hamming_loss": 0.07285714285714286,
+          "macro_f1_supported": 0.39759506405515893,
+          "micro_f1": 0.37804878048780494,
+          "n": 600,
+          "p50_ms": 125.6923959881533,
+          "strict_schema_adherence": 1.0
+        },
+        "source_run": "camp-laya-goemotions",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "rlcd-1": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "concurrency": 1,
+          "dataset": "goemotions",
+          "limit": 200,
+          "providers": [
+            "rlcd"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "first unseen positive example per canonical label in label order, then remaining test dataset order; deterministic",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "all_field_exact_record_match": 0.0,
+          "hamming_loss": 0.5280357142857143,
+          "macro_f1_supported": 0.13092156289665793,
+          "micro_f1": 0.11967847573682643,
+          "n": 600,
+          "p50_ms": 219.18312449997757,
+          "strict_schema_adherence": 1.0
+        },
+        "source_run": "power-rlcd-goemotions-rep1",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "rlcd-2": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "concurrency": 1,
+          "dataset": "goemotions",
+          "limit": 200,
+          "providers": [
+            "rlcd"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "first unseen positive example per canonical label in label order, then remaining test dataset order; deterministic",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "all_field_exact_record_match": 0.0,
+          "hamming_loss": 0.5280357142857143,
+          "macro_f1_supported": 0.13092156289665793,
+          "micro_f1": 0.11967847573682643,
+          "n": 600,
+          "p50_ms": 322.13368799421005,
+          "strict_schema_adherence": 1.0
+        },
+        "source_run": "power-rlcd-goemotions-rep2",
+        "status_counts": {
+          "ok": 600
+        }
+      },
+      "rlcd-3": {
+        "manifest_settings": {
+          "allow_paid": false,
+          "concurrency": 1,
+          "dataset": "goemotions",
+          "limit": 200,
+          "providers": [
+            "rlcd"
+          ],
+          "repetitions": 3,
+          "selection_strategy": "first unseen positive example per canonical label in label order, then remaining test dataset order; deterministic",
+          "warmup": 1
+        },
+        "metrics_as_stored": {
+          "all_field_exact_record_match": 0.0,
+          "hamming_loss": 0.5280357142857143,
+          "macro_f1_supported": 0.13092156289665793,
+          "micro_f1": 0.11967847573682643,
+          "n": 600,
+          "p50_ms": 315.00041649269406,
+          "strict_schema_adherence": 1.0
+        },
+        "source_run": "power-rlcd-goemotions-rep3",
+        "status_counts": {
+          "ok": 600
+        }
+      }
+    }
+  },
+  "source_of_truth": {
+    "cross_check": "Read-only cross-check of all 24 runs (rows, case cohorts, recomputed-vs-stored quality) on 2026-10-02: see agent/reports/historical-artifact-check.json (private; not part of this published package).",
+    "files": "Archived copies are byte-identical snapshots of the still-retained private working files at their original relative paths (sha256 recorded below); the published comparison/ files are the retained original harness (sha256 recorded in 'published_files', cross-checked against agent/reports/historical-source-baseline.json). They are snapshots of retained working files, NOT of run-time git commits; no run-time commit of the shared comparison code is pinned by any existing artifact.",
+    "metrics": "Summary metrics are copied verbatim from the stored comparison/results/<run>/summary.json (quality denominators exclude error rows, per the historical metric definition). No metrics were recomputed or modified here."
+  }
+}

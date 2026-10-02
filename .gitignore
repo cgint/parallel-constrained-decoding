@@ -48,10 +48,74 @@ checkpoints/
 agent/
 
 # Local comparison-run artifacts; keep harness code, tests, and datasets tracked.
-comparison/
+# Everything under comparison/ stays ignored EXCEPT the narrow historical
+# publication allowlist below (retained original code; see
+# benchmarks/historical-source/README.md). All entries are explicit per-file;
+# generated/new files are never exposed accidentally.
+comparison/*
+!comparison/README.md
+!comparison/__init__.py
+!comparison/models.py
+!comparison/dataset.py
+!comparison/metrics.py
+!comparison/run.py
+!comparison/datasets/
+comparison/datasets/*
+!comparison/datasets/routing_v1.json
+!comparison/adapters/
+comparison/adapters/*
+!comparison/adapters/__init__.py
+!comparison/adapters/base.py
+!comparison/adapters/dspy_adapter.py
+!comparison/adapters/jev.py
+!comparison/adapters/rlcd.py
+!comparison/multi_field/
+comparison/multi_field/*
+!comparison/multi_field/__init__.py
+!comparison/multi_field/run.py
+!comparison/multi_field/dataset.py
+!comparison/multi_field/adapters.py
+!comparison/multi_field/models.py
+!comparison/multi_field/metrics.py
+!comparison/multi_field/djev_adapter.py
+# Post-publication additions (not part of the 2026-09-20 sources) stay ignored:
+/comparison/multi_field/laya_adapter.py
+!comparison/tests/
+comparison/tests/*
+!comparison/tests/test_banking77.py
+!comparison/tests/test_clinc150_dataset.py
+!comparison/tests/test_dataset_metrics.py
+!comparison/tests/test_djev_adapter.py
+!comparison/tests/test_dspy_adapter.py
+!comparison/tests/test_mlx_enum_scoring.py
+!comparison/tests/test_models.py
+!comparison/tests/test_multi_field_jev_gate.py
+!comparison/tests/test_multi_field.py
+!comparison/tests/test_provider_adapters.py
+!comparison/tests/test_runner.py
+# New audit / Djev-probe tests: not historical (Djev tooling, post-grid) — excluded:
+/comparison/tests/test_grid_audit.py
+/comparison/tests/test_djev_probe.py
+
+# Published historical source snapshot (see benchmarks/historical-source/README.md)
+benchmarks/historical-source/*
+!benchmarks/historical-source/README.md
+!benchmarks/historical-source/provenance.json
+!benchmarks/historical-source/laya/
+benchmarks/historical-source/laya/*
+!benchmarks/historical-source/laya/camp_runner2.py
+!benchmarks/historical-source/drivers/
+benchmarks/historical-source/drivers/*
+!benchmarks/historical-source/drivers/banking77_run_arms.sh
+!benchmarks/historical-source/drivers/goemotions_run_all_arms.sh
+!benchmarks/historical-source/drivers/clinc150_run_arms.py
+!benchmarks/historical-source/drivers/clinc150_run_phase2.py
+!benchmarks/historical-source/drivers/nova_serial.sh
+!benchmarks/historical-source/drivers/remote_serial.sh
 
 # Pi session state & operational data
 .pi/
+.sub_agent_con_d
 .sub_agent_conf
 AGENTS.md
 PROJECT_OVERVIEW.md
@@ -63,3 +127,10 @@ SECURITY_SCAN-*.md
 
 # Research docs (agent-session workstream; public results live in benchmarks/)
 docs/
+
+# Incomplete post-grid "reproducibility" bundle (aborted improvement work, not
+# historical 2026-09-20 sources) — never publish (see benchmarks/historical-source/)
+benchmarks/reproducibility/
+
+# Local security-scan configuration (standard rules; not benchmark input)
+/.gitleaks.toml

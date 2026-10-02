@@ -23,7 +23,7 @@
 ### Credits
 
 - **Original engine:** [Harsha Gundala](https://huggingface.co/harshatheg) — [`harshatheg/Qwen-2.5-1B-RLCD`](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) on Hugging Face (Apache-2.0). This fork adds full-token enum scoring, local benchmarks, and the comparison grid.
-- **DSPy** — [Stanford NLP](https://dspy.ai/)'s programming framework for LLM applications. The comparison harness in `benchmarks/` uses DSPy as the quality reference. [DSPy GitHub](https://github.com/stanfordnlp/dspy).
+- **DSPy** — [Stanford NLP](https://dspy.ai/)'s programming framework for LLM applications. The comparison harness in `comparison/` uses DSPy as the quality reference. [DSPy GitHub](https://github.com/stanfordnlp/dspy). Published 2026-09-20 benchmark sources are archived in [`benchmarks/historical-source/`](benchmarks/historical-source/README.md).
 - **Jev / TypeSafe** — [TypeSafe AI](https://typesafe.ai/)'s structured-decision API. Referenced in the comparison as the closed-API benchmark. [Jev docs](https://docs.typesafe.ai/).
 
 ---
